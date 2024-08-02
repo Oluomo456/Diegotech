@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-C0mpatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog: Editor</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="editor.css">
+        <link rel="stylesheet" type="text/css" href="home.css">
+        <script src="editor.js"></script>
+    </head>
+    <body>
+        <div class="banner">
+            <input type="file" accept="image/*" id="banner-upload" hidden>
+            <label for="banner-upload" class="banner-upload-btn"><img src="logd.png" alt="upload banner"></label>
+        </div>
+        <div class="blog">
+            <textarea type="text" class="title" placeholder="Diegotech World"></textarea>
+            <textarea type="text" class="article" placeholder="To provide Responsive, Thorough, Effective consulting and technical support for all business clients; and to incorporate existing and new technologies that will help increase productivity and ultimately increase profitability.DiegoTech understands that outsourcing is part of helping your company stay competitive, focused and profitable. Having a computer support company is part of that strategy. Our services are designed to help you accomplish this goal. DiegoTech will work with you remotely or at your office, to make sure your network, servers and computers are up and running as efficiently as possible. With over 11 years of experience and competitive prices, we have the expertise to help with your software, hardware networking and service needs. We are passionate about our services and appreciate serving you."></textarea>
+        </div>
+        <div class="blog-options">
+            <button class="btn dark publish-btn">publish</button>
+            <input type="file" accept="image/*" id="image-upload" hidden>
+            <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+        </div>
+        <script>
+        import { initializeApp } from "firebase/app";
+        import { getAnalytics } from "firebase/analytics";
+        </script>
+        <script src="firebase.js"></script>
+        <script src="editor.js"></script>
+    </body>
+</html>

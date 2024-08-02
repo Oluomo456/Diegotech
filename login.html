@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<style type="text/css">
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: sans-serif;
+			line-height: 1.5;
+			min-height: 100vh;
+			background: #f3f3f3;
+			flex-direction: column;
+			margin: 0;
+		}
+		.main{
+			background: #fff;
+			border-radius: 15px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+			padding: 10px 20px;
+			transition: 0.2s;
+			width: 500px;
+			text-align: center;
+		}
+		h1{
+			color: #4CAF50;
+		}
+		label{
+			display: block;
+			width: 100%;
+			margin-bottom: 5px;
+			margin-top: 10px;
+			text-align: left;
+			color: #555;
+			font-weight: bold;
+		}
+		input{
+			display: block;
+			width: 100%;
+			margin-bottom: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		button{
+			padding: 15px;
+			border-radius: 10px;
+			margin-top: 15px;
+			margin-buttom: 15px;
+			border: none;
+			color: white;
+			cursor: pointer;
+			background: #4CAF50;
+			width: 100%;
+			font-size: 16px;
+		}
+		wrap{
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<h1>Diegotech World</h1>
+		<h3>Enter your login credentials</h3>
+<form method="post">
+	<label for="username"><b>Userame:</b></label>
+	<input type="text" name="username" placeholder="Enter your username" required><br>
+	<label for="password"><b>Password:</b></label>
+	<input type="text" name="password" placeholder="Enter your password" name="password" id="password" required><br>
+	<input type="checkbox" onclick="myFunction()">Show Password
+	<div class="wrap">
+	<button type="submit" onclick="solve()">Login</button>
+</div>
+</form>
+<p>Not registered?
+	<a href="register.html" style="text-decoration: none;">Create an account</a>
+	</p> 
+</div>
+<script type="text/javascript">
+	function myFunction() {
+		var x =
+		document.getElementById('password');
+		if (x.type === "password") {
+			x.type = "text";
+		} else {
+			x.type = "password";
+		}
+	}
+</script>
+</body>
+</html>

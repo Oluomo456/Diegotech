@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome</title>
+</head>
+<body  onload="myFunction()" style="margin: 0;">
+	<style>
+		/* Add a black background colour to the navigation bar */
+
+
+h1, h3 {
+    font-family:'Times New Roman';
+    font-size: 72px;
+    font-weight: bolder;
+    text-align: center;
+    color: red;
+    -webkit-text-stroke-width: 3.5px;
+    -webkit-text-stroke-color: black;
+}
+body{
+	background-image: url(images.jpg);
+
+}
+h2 {
+    text-align: center;
+    font-size: medium;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+p {
+    text-align: left;
+    font-family: sans-serif;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+    font-size: 24px;
+
+}
+
+img{
+    width:150px; height:150px;
+}
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {display: inline;
+    float: right;
+
+}
+a {display: block;
+    padding: 8px;
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Black border */
+    border-bottom: solid black 2px;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a black color */
+  input[type=submit]:hover {
+    background-color: #010e01;
+  }
+
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;}
+
+    #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom: -100px; opacity: 0 }
+  to { bottom: 0; opacity: 1 }
+}
+
+@keyframes animatebottom {
+  from { bottom: -100px; opacity: 0 }
+  to { bottom: 0; opacity: 1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+        </style>
+        <div id="loader"></div>
+        <div style="display: none;" id="myDiv" class="animate-bottom">
+        <div>
+
+	<div class="nav">
+        <ul>
+        <li><a href="home1.html">Home</a></li>
+        <li><a href="#about us">About Us</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#my account">My Account</a></li>
+        <li><a href="#book reviews">Book Reviews</a></li>
+        <li><a href="#contact us">Contact Us</a></li>
+        <li><a href="home.html">Blog</a></li>
+        <li><a href="editor.html">Know more</a></li>
+        <li><a href="profile.html">Check Profile</li>
+        </ul>
+    </div>
+    <div>
+    	<img src="logd.png" width="10px" height="10px"><big><b>Diegotech World</b></a></big><h1>Welcome To Our Site</h1>
+    <h2>
+        <p><strong><b>
+        To provide Responsive, Thorough, Effective consulting and technical support for all business clients; and to incorporate existing and new technologies that will help increase productivity and ultimately increase profitability.
+        <br><br>
+        DiegoTech understands that outsourcing is part of helping your company stay competitive, focused and profitable. Having a computer support company is part of that strategy. Our services are designed to help you accomplish this goal. 
+        <br><br>
+        DiegoTech will work with you remotely or at your office, to make sure your network, servers and computers are up and running as efficiently as possible. 
+        <br><br>
+        With over 11 years of experience and competitive prices, we have the expertise to help with your software, hardware networking and service needs. We are passionate about our services and appreciate serving you.
+        </b></strong></p>
+    </h2>
+     <br><br> 
+                          <div class="container">
+                          <h3>Feedback Form</h3>
+
+                            <form action>
+
+                              <label for="fname">First Name</label><br>
+                              <input type="text" id="fname" name="firstname" placeholder="First Name"><br>
+
+                              <label for="lname">Last Name</label><br>
+                              <input type="text" id="lname" name="lastname" placeholder="Last Name"><br>
+
+                              <label for="country">Country</label><br>
+                              <select id="country" name="country">
+                                <option value="nigeria">Nigeria</option>
+                                <option value="ghana">Ghana</option>
+                                <option value="rwanda">Rwanda</option>
+                              </select><br>
+
+                              <label for="subject">Say Something</label><br>
+                              <textarea id="subject" name="subject" placeholder="say something" style="height:200px"></textarea>
+
+                              <input type="submit" value="Submit">
+
+                            </form>
+                          </div>
+            </div>
+          </div>
+          <script>
+            var myVar;
+            function myFunction() {
+              myVar = setTimeout(showPage, 3000);
+            }
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+          </script>
+
+</body>
+</html>
